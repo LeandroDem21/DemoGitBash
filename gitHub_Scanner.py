@@ -14,7 +14,11 @@ repos = [name for name in os.listdir(git.dir)
          if os.path.isdir(os.path.join(git_dir, name)) and
          os.path.exists(os.path.join(git_dir, name, ".git"))]
 
-if respos:
+if repos:
     print("found the following Github respository")
     for idx, repo in enumerate(repos, 1):
-        print(f"{idx . {repo}}")
+        print(f"{idx}. {repo}")
+
+    else: 
+        print("No GitHub respositories found in C:\Users\CC6\Desktop\docs ")
+        print("please provide a Github repository")
